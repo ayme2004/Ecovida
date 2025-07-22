@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datos Curiosos - EcoVida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+    :root {
+      --verde-oscuro: #003333;
+      --verde-principal: #027c68;
+      --verde-claro: #b0e892;
+      --verde-accion: #009933;
+      --blanco: #ffffff;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f6fff9, #ffffff);
+      color: #003333;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: transparent;
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      color: var(--verde-oscuro);
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #444;
+      font-weight: 500;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--verde-accion);
+    }
+
+    .hero-section {
+      background: linear-gradient(145deg, #e8fdf0, #ffffff);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn-success, .btn-outline-success {
+      border-radius: 50px;
+      padding: 0.6rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--verde-principal);
+      margin-bottom: 1.5rem;
+    }
+
+    .icon-large {
+      font-size: 2.5rem;
+      color: var(--verde-principal);
+      margin-bottom: 10px;
+    }
+
+    .img-rounded {
+      border-radius: 12px;
+    }
+
+    .card-custom {
+      border: none;
+      background-color: transparent;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      color: #333;
+      font-size: 0.9rem;
+      padding: 1rem 0;
+    }
+
+    .btn-volver {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--verde-principal);
+      border-radius: 50px;
+      padding: 0.5rem 0.7rem;
+    }
+
+    .animate-fade {
+      animation: fadeIn 1s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .bg-light {
+      background-color: #f9f9f9 !important;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 EcoVida</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="mision.html">Misión</a></li>
+        <li class="nav-item"><a class="nav-link" href="problemas.html">Problemas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acciones.html">Acciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <!-- Contenido -->
+  <main class="flex-grow-1">
+    <section class="py-5 animate-fade" id="datos">
+      <div class="container">
+        <h2 class="text-center section-title">🌱 Datos Curiosos del Medio Ambiente</h2>
+        <div class="row g-4">
+          <!-- Dato 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">El plástico tarda siglos</h5>
+                <p class="card-text">Una botella de plástico puede tardar más de <strong>450 años</strong> en descomponerse en la naturaleza.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Dato 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">Árboles y oxígeno</h5>
+                <p class="card-text">Un solo árbol maduro puede producir el oxígeno suficiente para que respiren <strong>dos personas al día</strong>.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Dato 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">Desperdicio de alimentos</h5>
+                <p class="card-text">Cada año se desperdicia <strong>un tercio de todos los alimentos</strong> producidos en el mundo, lo que contribuye al cambio climático.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Dato 4 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">Océanos contaminados</h5>
+                <p class="card-text">Se estima que <strong>8 millones de toneladas</strong> de plástico terminan en los océanos cada año.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dato curioso 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🐝 Dato Curioso </h5>
+            <p class="card-text">Las abejas son responsables de 1 de cada 3 alimentos que comemos.</p>
+          </div>
+        </div>
+      </div>
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El mar también respira</h5>
+      <p class="card-text">El fitoplancton marino produce gran parte del oxígeno que respiramos, incluso más que los bosques terrestres.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El bambú es un superhéroe verde</h5>
+      <p class="card-text">Esta planta puede crecer increíblemente rápido y ayuda a controlar la erosión del suelo, además de absorber grandes cantidades de dióxido de carbono.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Los árboles se comunican</h5>
+      <p class="card-text">A través de sus raíces y hongos del suelo, los árboles intercambian señales químicas que les permiten compartir nutrientes y alertarse de peligros.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Reciclar ahorra energía</h5>
+      <p class="card-text">Reutilizar materiales consume mucha menos energía que fabricar productos desde cero, lo que reduce la contaminación del aire y el agua.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El plástico puede viajar lejos</h5>
+      <p class="card-text">Una bolsa de plástico puede recorrer grandes distancias a través de ríos y océanos, dañando ecosistemas marinos en su camino.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">La Tierra no necesita bolsas</h5>
+      <p class="card-text">Las bolsas biodegradables o de tela ayudan a reducir la cantidad de residuos que terminan contaminando ríos, mares y campos.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Los corales son animales</h5>
+      <p class="card-text">Aunque parecen plantas o piedras, los corales están vivos y forman arrecifes que son el hogar de miles de especies marinas.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El vidrio es reciclable infinitamente</h5>
+      <p class="card-text">A diferencia de otros materiales, el vidrio puede reciclarse muchas veces sin perder calidad ni pureza.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Las abejas polinizan nuestros alimentos</h5>
+      <p class="card-text">Gran parte de los alimentos que consumimos dependen de la polinización realizada por abejas y otros insectos.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Las zonas verdes refrescan las ciudades</h5>
+      <p class="card-text">Los parques y árboles urbanos ayudan a reducir el calor, mejoran el aire y aumentan el bienestar emocional.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Los océanos regulan el clima</h5>
+      <p class="card-text">El agua del mar absorbe calor y CO₂, ayudando a mantener el equilibrio climático del planeta.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Un árbol puede vivir cientos de años</h5>
+      <p class="card-text">Existen árboles que tienen más de mil años de vida, siendo testigos de la historia natural del planeta.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El bambú crece increíblemente rápido</h5>
+      <p class="card-text">Algunas especies de bambú pueden crecer más de 90 cm en un solo día, siendo una de las plantas de más rápido crecimiento en el mundo.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Las tortugas marinas navegan por el campo magnético</h5>
+      <p class="card-text">Usan el campo magnético de la Tierra como un GPS natural para viajar miles de kilómetros en el océano.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Las lombrices mejoran el suelo</h5>
+      <p class="card-text">Las lombrices ayudan a airear la tierra y descomponer materia orgánica, lo que hace que el suelo sea más fértil.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El reciclaje de una lata ahorra energía</h5>
+      <p class="card-text">Reciclar una sola lata de aluminio puede ahorrar la energía suficiente para hacer funcionar una televisión por tres horas.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Las plantas purifican el aire</h5>
+      <p class="card-text">Además de producir oxígeno, muchas plantas también eliminan toxinas del aire, ayudando a mantener espacios más saludables.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El deshielo afecta a los osos polares</h5>
+      <p class="card-text">El calentamiento global está derritiendo el hielo del Ártico, lo que dificulta la caza y la supervivencia de los osos polares.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El océano produce la mayoría del oxígeno</h5>
+      <p class="card-text">Hasta el 70% del oxígeno que respiramos proviene de organismos marinos como el fitoplancton.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Los árboles pueden comunicarse</h5>
+      <p class="card-text">A través de sus raíces y una red subterránea de hongos, los árboles se envían señales de advertencia sobre plagas o enfermedades.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Una ducha corta ahorra mucha agua</h5>
+      <p class="card-text">Reducir tu ducha en solo 2 minutos puede ahorrar hasta 30 litros de agua al día.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">La energía solar es ilimitada</h5>
+      <p class="card-text">En solo una hora, la Tierra recibe más energía solar de la que toda la humanidad consume en un año.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Una bolsa de plástico puede tardar siglos en degradarse</h5>
+      <p class="card-text">Las bolsas plásticas pueden tardar más de 400 años en descomponerse completamente en el ambiente.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 animate-fade">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">El compost reduce la basura</h5>
+      <p class="card-text">Compostar restos de comida ayuda a reducir la cantidad de residuos enviados a los vertederos y mejora la salud del suelo.</p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Dato curioso 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🌍 Dato Curioso </h5>
+            <p class="card-text">Cada minuto, el mundo pierde un bosque del tamaño de 20 canchas de fútbol.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dato curioso 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">💧 Dato Curioso </h5>
+            <p class="card-text">Solo el 2.5% del agua del planeta es dulce, y la mayoría está congelada.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dato curioso 4 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🌳 Dato Curioso </h5>
+      <p class="card-text">Un solo árbol puede absorber hasta 22 kg de dióxido de carbono al año.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 5 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🌡️ Dato Curioso </h5>
+      <p class="card-text">La última década ha sido la más calurosa registrada en la historia moderna.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 6 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🧃 Dato Curioso </h5>
+      <p class="card-text">Se estima que una botella plástica tarda hasta 500 años en descomponerse.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 7 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🐢 Dato Curioso </h5>
+      <p class="card-text">Más de 1 millón de animales marinos mueren cada año por plástico en los océanos.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 8 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🌬️ Dato Curioso </h5>
+      <p class="card-text">El aire dentro de casas y oficinas puede estar hasta 5 veces más contaminado que el del exterior.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 9 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">♻️ Dato Curioso </h5>
+      <p class="card-text">Reciclar una tonelada de papel puede salvar 17 árboles y más de 26,000 litros de agua.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 10 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🚰 Dato Curioso </h5>
+      <p class="card-text">Casi el 97% del agua del planeta es salada y solo el 3% es dulce, de la cual menos del 1% está disponible para consumo humano.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 11 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🌎 Dato Curioso </h5>
+      <p class="card-text">Si toda la población mundial viviera como en los países más desarrollados, necesitaríamos más de 3 planetas Tierra para sostenernos.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 12 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🪴 Dato Curioso </h5>
+      <p class="card-text">Las plantas de interior no solo decoran, también purifican el aire al absorber gases contaminantes como el formaldehído y el benceno.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 13 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🛍️ Dato Curioso </h5>
+      <p class="card-text">Una bolsa de plástico se utiliza en promedio solo 12 minutos, pero puede tardar más de 100 años en degradarse.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 14 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">📦 Dato Curioso </h5>
+      <p class="card-text">Más del 40% del plástico producido se usa una sola vez y luego se desecha.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dato curioso 15 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🐝 Dato Curioso </h5>
+      <p class="card-text">Las abejas polinizan alrededor del 70% de los cultivos que consumimos. Su desaparición pondría en riesgo nuestra seguridad alimentaria.</p>
+    </div>
+  </div>
+</div>
+
+
+          <!-- Dato 5 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">Ahorro de papel</h5>
+                <p class="card-text">Reciclar una tonelada de papel puede salvar aproximadamente <strong>17 árboles</strong> y miles de litros de agua.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Dato 6 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h5 class="card-title">El Amazonas</h5>
+                <p class="card-text">El Amazonas produce el <strong>20% del oxígeno</strong> de la Tierra y alberga millones de especies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center mt-auto">
+    <p>© 2025 EcoVida | Hecho por Manuel Vidal Gomez Ayme 🌱</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Problemas Ambientales - EcoVida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --verde-oscuro: #003333;
+      --verde-principal: #027c68;
+      --verde-claro: #b0e892;
+      --verde-accion: #009933;
+      --blanco: #ffffff;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f6fff9, #ffffff);
+      color: #003333;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: transparent;
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      color: var(--verde-oscuro);
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #444;
+      font-weight: 500;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--verde-accion);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--verde-principal);
+      margin-bottom: 2rem;
+    }
+
+    .img-fluid {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-custom {
+      border: none;
+      background-color: transparent;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      color: #333;
+      font-size: 0.9rem;
+      padding: 1rem 0;
+    }
+
+    .btn-volver {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--verde-principal);
+      border-radius: 50px;
+      padding: 0.5rem 0.7rem;
+    }
+
+    .animate-fade {
+      animation: fadeIn 1s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 EcoVida</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="mision.html">Misión</a></li>
+        <li class="nav-item"><a class="nav-link" href="problemas.html">Problemas</a></li>
+        <li class="nav-item"><a class="nav-link" href="acciones.html">Acciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección de Problemas Ambientales -->
+<section class="py-5 animate-fade">
+  <div class="container">
+    <h2 class="text-center section-title">Principales Problemas Ambientales</h2>
+
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <h4>Contaminación</h4>
+        <ul>
+          <li><strong>Aire:</strong> emisiones industriales y vehículos afectan la salud y el clima.</li>
+          <li><strong>Agua:</strong> residuos tóxicos contaminan ríos, mares y acuíferos.</li>
+          <li><strong>Suelo:</strong> desechos sólidos y químicos deterioran ecosistemas.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/ambiental contaminación concepto_ el planeta es dividido dentro dos partes, contaminado por perjudicial basura y un puramente verde parte. plano vector ilustración" class="img-fluid" alt="Contaminación ambiental">
+      </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6 order-md-2">
+        <h4>Cambio Climático</h4>
+        <ul>
+          <li><strong>Gases de efecto invernadero:</strong> provocan aumento de temperatura global.</li>
+          <li><strong>Fenómenos extremos:</strong> sequías, huracanes, inundaciones más intensas.</li>
+          <li><strong>Derretimiento polar:</strong> eleva el nivel del mar y afecta especies árticas.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 order-md-1 text-center">
+        <img src="img/tierra derretida en la ilustración del efecto invernadero.jpeg" class="img-fluid" alt="Cambio climático">
+      </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <h4>Deforestación y pérdida de biodiversidad</h4>
+        <ul>
+          <li><strong>Destrucción de hábitats:</strong> por tala ilegal y expansión urbana.</li>
+          <li><strong>Extinción de especies:</strong> desequilibra los ecosistemas naturales.</li>
+          <li><strong>Falta de reforestación:</strong> reduce producción de oxígeno y retención de agua.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/¿Quien se beneficia de la destrucción de nuestro planeta_ ¿Tú_ 🤔.jpeg" class="img-fluid" alt="Deforestación">
+      </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6 order-md-2">
+        <h4>Gestión inadecuada de residuos</h4>
+        <ul>
+          <li><strong>Acumulación de basura:</strong> genera focos infecciosos y afecta la fauna.</li>
+          <li><strong>Falta de reciclaje:</strong> agota recursos y contamina suelos y mares.</li>
+          <li><strong>Desechos tóxicos:</strong> sin tratamiento adecuado contaminan por décadas.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 order-md-1 text-center">
+        <img src="img/A Fakin Trash.jpeg" class="img-fluid" alt="Residuos">
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="lead">El conocimiento es el primer paso. ¡Actuemos ahora para proteger nuestro planeta! 🌱</p>
+      <a href="mision.html" class="btn btn-outline-success">Ver nuestra misión</a>
+    </div>
+  </div>
+</section>
+
+<!-- Botón volver arriba -->
+<a href="#" class="btn btn-volver"><i class="bi bi-arrow-up text-white"></i></a>
+
+<!-- Footer -->
+<footer class="text-center">
+  <p>© 2025 EcoVida | Hecho por Manuel Vidal Gomez Ayme 🌎</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
